@@ -9,7 +9,7 @@
 
 (function() {
     let keywords = document.getElementsByClassName("col-xs-12 text-left"),
-        myKeys = keywords[0].innerHTML.match(/\/search\/\w+/g).map(x => x.replace(/\/search\//, '')).join(' '),
+        myKeys = keywords[0].innerHTML.match(/\/search\/\w+/g).map(x => x.replace(/\/search\//, '')).join(', '),
         node = document.createElement("p");
     node.style.cssText = 'padding: 14px; margin-top: 48px; text-align: left;';
     node.innerHTML = myKeys;
