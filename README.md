@@ -1,14 +1,20 @@
-# Shutterstock Keywords
+# Shutterstock Helpers
 
-Cкрипт добавляет ключевые слова в нормальном виде (которые можно выделить и скопировать) для каждой работы на шаттерстоке. 
+Серия скриптов для улучшения опыта работы с Шаттерстоком. 
 
-## Как использовать
-  - Скопировать [скрипт](/shutterstockKeywords.js)
+### Shutterstock Keywords
+
+Добавляет ключевые слова, которые можно выделить и скопировать, для каждой работы на шаттерстоке.
+Как это выглядит:
+![Shutterstock Keywords](http://megaworkshop.ru/lj/shutterstockKeywords.gif)
+
+### RSS and M-rank Links
+
+Добавляет ссылки на RSS фид и M-rank данного автора под разделом "Share this portfolio"
+
+#### Как использовать скрипты
+  - Скопировать нужный скрипт
   - Установить расширение для браузера [Tampermonkey](http://tampermonkey.net/) 
     - Create new script... -> Вставить -> Сохранить
 
-Done! 
-Теперь при просмотре работ на шаттерстоке у вас будут отображаться ключевые слова, которые можно выделить и скопировать.
-
-### Как это выглядит
-![Shutterstock Keywords](http://megaworkshop.ru/lj/shutterstockKeywords.gif)
+Done! После обновления страницы скрипт работает.
