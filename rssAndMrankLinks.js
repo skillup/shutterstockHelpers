@@ -4,6 +4,7 @@
 // @version       1.0
 // @description   Adds RSS Feed and M-rank links to portfolio page
 // @include       https://www.shutterstock.com/g/*
+// @include       https://www.shutterstock.com/ru/g/*
 // ==/UserScript==
 
 (() => {
