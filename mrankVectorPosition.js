@@ -5,8 +5,6 @@
 // @description   M-rank position and link for vector illustration
 // @include       https://www.shutterstock.com/image-vector/*
 // @grant         GM_xmlhttpRequest
-// @grant         GM_setValue
-// @grant         GM_getValue
 // ==/UserScript==
 
 (() => {
