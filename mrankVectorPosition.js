@@ -17,10 +17,14 @@
         method: "GET",
         url: myURL,
         onload: function(response) {
-            let temp = response.responseText.match(/\d+<\/big>-ÿ/g) || '---';
-            let position = temp === '---' ? temp : temp[0].replace(/(\d+)(.+)/g, '$1');
-            node.innerHTML = ` | <a href="http://www.m-rank.net/?search=${vectorID}">M-rank position ${position}</a>`;
-            document.querySelector(".contrib-byline").appendChild(node);
+            if (response.status != 200) {
+                console.log(response.status + ': ' + response.statusText);
+            } else {
+                let temp = response.responseText.match(/tle>\d+/) || '---';
+                let position = temp === '---' ? temp : temp[0].replace(/(tle>)(\d+)/g, '$2');
+                node.innerHTML = ` | <a href="http://www.m-rank.net/?search=${vectorID}">M-rank position ${position}</a>`;
+                document.querySelector(".contrib-byline").appendChild(node);
+            }
         }
     });
 })();
