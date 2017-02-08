@@ -14,6 +14,7 @@
         keywordsCount = document.createElement("span"),
         keys = document.querySelector(".product-page-keywords"),
         parent = keys.parentNode;
+
     newKeywords.innerHTML = document.querySelector(".col-xs-12").innerHTML.match(/h\/\w+((-|\+)\w+(\+\w+)?)?/g).map(x => x.slice(2).replace(/\+/g, ' ')).join(', ');
     let html = newKeywords.innerHTML.split(', ');
     html = html.map(a => a = `<a href="/search/${a}">${a}</a>`);
