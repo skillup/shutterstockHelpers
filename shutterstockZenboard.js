@@ -20,5 +20,5 @@
     for (let i = 8; i < temp.length; i++)
         temp[i].remove();
     temp[7].parentNode.className = '';
-    temp[7].parentNode.style.cssText = 'width: 600px; margin: 0 auto; margin-top: 200px;';
+    temp[7].parentNode.style.cssText = 'width: 400px; margin: 0 auto; margin-top: 200px;';
 })();
