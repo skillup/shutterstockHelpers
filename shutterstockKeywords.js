@@ -12,16 +12,12 @@
 (() => {
     let keywords = document.querySelectorAll('.js-product-keywords-holder')[0].children,
         newKeywords = document.createElement("p"),
-        keywordsCount = document.createElement("span"),
         keys = document.querySelector(".product-page-keywords"),
         parent = keys.parentNode;
 
     keywords = [...keywords].map(k => k.innerHTML).map(a => `<a href="/search/${a}">${a}</a>`);
 
-    keywordsCount.innerHTML = `${keywords.length} keywords:<br>`;
-
-    newKeywords.innerHTML = keywordsCount.innerHTML;
-    newKeywords.innerHTML += keywords.join(', ');
+    newKeywords.innerHTML = `${keywords.length} keywords:<br>${keywords.join(', ')}`;
     newKeywords.style.cssText = 'padding-left: 14px; text-align: left; line-height: 150%';
 
     parent.appendChild(newKeywords);
