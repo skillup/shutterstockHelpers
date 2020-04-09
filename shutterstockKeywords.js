@@ -2,7 +2,7 @@
 // @name          Shutterstock Keywords
 // @author        Oleg Skillup (skillup.lj.ru)
 // @source        http://skillup.lj.ru
-// @version       1.5
+// @version       1.6
 // @description   Easy to copy image keywords.
 // @include       https://www.shutterstock.com/image-photo/*
 // @include       https://www.shutterstock.com/image-vector/*
@@ -10,10 +10,10 @@
 // ==/UserScript==
 
 (() => {
-    const $ = document.querySelectorAll.bind(document);
-    let keywords = $('.C_a_c')[0].children[0].children[0].children,
+    const $ = document.querySelector.bind(document);
+    let keywords = $('.oc_x_c').children,
         newKeywords = document.createElement("div"),
-        my_parent = $('body')[0];
+        my_parent = $('body');
 
     keywords = [...keywords].map(k => k.innerText).map(a => `<a href="/search/${a}">${a}</a>`);
 
